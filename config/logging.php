@@ -52,6 +52,12 @@ return [
 
     'channels' => [
 
+        'requestlog' => [
+        'driver' => 'single',
+        'path' => storage_path('logs/request_log.log'),  // Specify the custom log file
+        'level' => 'info',
+    ],
+
         'stack' => [
             'driver' => 'stack',
             'channels' => explode(',', env('LOG_STACK', 'single')),

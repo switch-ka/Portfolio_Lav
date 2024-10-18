@@ -1,0 +1,223 @@
+/* Global Styles */
+body {
+    background-color: #1a1a2e;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation */
+header {
+    background-color: #0f3460;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #e94560;
+}
+
+/* Portfolio Page */
+.portfolio-page {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+}
+
+.intro {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0px 0px 15px 5px rgba(255,255,255,0.2);
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 1rem;
+    color: #e94560;
+    letter-spacing: 1px;
+}
+
+.job-title {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    color: #fff;
+}
+
+.description {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #bbb;
+}
+
+/* Work Experience and Projects */
+.work-experience, .projects {
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #e94560;
+    margin: 1rem auto 0;
+}
+
+.experience-grid, .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.project-item{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #16213e;
+}
+.experience-item{
+    background-color: #16213e;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-item:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.experience-item img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+.experience-item h3{
+    font-size: 1.6rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.experience-item p{
+    font-size: 1rem;
+    color: #bbb;
+    line-height: 1.5;
+}
+
+/* Projects */
+.project-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-item h3 {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #e94560;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #fff;
+}
+
+/* Contact Section */
+.contact {
+    padding: 3rem 1rem;
+    text-align: center;
+    background-color: #0f3460;
+}
+
+.contact h2 {
+    margin-bottom: 1.5rem;
+    color: #fff;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.social-icons a {
+    color: #e94560;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    background-color: #0f3460;
+    padding: 1rem;  /* Reduced padding */
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;  /* Reduced font size */
+    color: #bbb;
+}
